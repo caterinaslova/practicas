@@ -203,7 +203,7 @@ nav{
 }
 .fondo{
     height: 100vh;
-    background: url(/imagenes/pexels-diva-plavalaguna-6937867.jpg);
+    background: url(/imagenes/fondo.webp);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -228,10 +228,10 @@ nav{
     }
 }
 #primera h2{
-    visibility: 0;
+    opacity: 0;
     font-weight: 300;
     z-index: 1;
-    animation: mostrar 4s ease-in-out;
+    animation: aparecer 3s ease-in-out;
   
 }
 
@@ -257,12 +257,23 @@ nav{
 
 @keyframes mostrar {
   0%{
-    visibility: 0;
+    visibility: 0.8;
     transform: scale(0);
   }    
   100%{
     visibility: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+
+  }    
+  100%{
+    opacity: 1;
+  
   }
 }
 
