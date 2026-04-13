@@ -231,7 +231,7 @@ nav{
     opacity: 0;
     font-weight: 300;
     z-index: 1;
-    animation: aparecer 3s ease-in-out;
+    animation: aparecer 3s ease forwards;
   
 }
 
